@@ -105,6 +105,20 @@
 // }
 // console.log(task18("125"));
 
+// function task19(text) {
+//     text = parseInt(text)
+//     const arr=[]
+//     for (let i = 2; i <= text; i++) {
+//         if(!(text%i)){
+//             arr.push(i)
+//             text/=i
+//             i--
+//         }
+//     }
+//     return arr
+// }
+// console.log(task19(32));
+
 // function task20(text) {
 //     text = parseInt(text)
 //     let isPrime = true
@@ -175,28 +189,101 @@
 // }
 // console.log(task23(10,33));
 
-
-// function task2(start,end) {
-//     start = parseInt(start)
-//     end = parseInt(end)
-//     let temp
-//     let isPoli
-//     const arr = []
-//     for (let i = start; i < end; i++) {
-//         temp = i.toString()
-//         isPoli = true
-//         for (let j = 0; j < temp.length; j++) {
-//             if(!(temp[j] === temp[temp.length-j-1])){
-//                 isPoli = false
-//             }
+// function task24(num) {
+//     num = parseInt(num)
+//     let sum =0
+//     for (let i = 1; i < num; i++) {
+//         if (!(num%i)) {
+//             sum+=i
 //         }
-//         if (isPoli) {
+//     }
+//     return sum===num
+// }
+    
+// console.log(task24(28));
+
+// function task25(num,n) {
+//     num = parseInt(num)
+//     n = parseInt(n)
+//     let temp=1
+//     for (let i = 0; i <n; i++) {
+//         temp*=num
+//     }
+
+//     return temp
+// }
+// console.log(task25(2,8));
+
+// function task26(...params) {
+//     const arr =[]
+//     for (let i = 0; i <params.length; i++) {
+//         if (params[i]%2) {
 //             arr.push(i)
 //         }
 //     }
 
 //     return arr
 // }
-// console.log(task23(10,33));
+// console.log(task26(11,22,33,44,55,66,77,88,99));
+
+// function task27(...params) {
+//     const arr =[]
+//     for (let i = 0; i <params.length; i++) {
+//         if (!(params[i]%2)) {
+//             arr.push(i)
+//         }
+//     }
+
+//     return arr
+// }
+// console.log(task27(11,22,33,44,55,66,77,88,99));
+
+// function task28(...params) {
+//     const arr =[]
+//     for (let i = 0; i <params.length; i++) {
+//         if (i%2) {
+//             arr.push(params[i])
+//         }
+//     }
+
+//     return arr
+// }
+// console.log(task28(11,22,33,44,55,66,77,88,99));
+
+// function task29(...params) {
+//     const arr =[]
+//     for (let i = 0; i <params.length; i++) {
+//         if (!(i%2)) {
+//             arr.push(params[i])
+//         }
+//     }
+
+//     return arr
+// }
+// console.log(task29(11,22,33,44,55,66,77,88,99));
+
+// function task30(...params) {
+//     let temp = params[0]
+//     for (let i = 0; i <params.length; i++) {
+//         if (temp < params[i]) {
+//             temp = params[i]
+//         }
+//     }
+
+//     return temp
+// }
+// console.log(task30(11,22,33,44,55,66,77,88,99));
+
+// function task31(...params) {
+//     let temp = params[0]
+//     for (let i = 0; i <params.length; i++) {
+//         if (temp > params[i]) {
+//             temp = params[i]
+//         }
+//     }
+
+//     return temp
+// }
+// console.log(task31(11,22,33,44,55,66,77,88,99));
 
 
